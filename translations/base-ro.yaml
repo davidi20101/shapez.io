@@ -292,36 +292,26 @@ dialogs:
         title: Șterge Puzzle?
         desc: Ești sigur că vrei să ștergi '<title>'? Această modificare e permanentă!
     modsDifference:
-        title: Mod Warning
-        desc: The currently installed mods differ from the mods the savegame was created
-            with. This might cause the savegame to break or not load at all. Are
-            you sure you want to continue?
-        missingMods: Missing Mods
-        newMods: Newly installed Mods
+        title: Alertă mod-uri
+        desc: Mod-urile instalate în prezent diferă de mod-urile cu care a fost creat fișierul de salvare. Acest lucru ar putea provoca deteriorarea sau chiar imposibilitatea încărcării fișierului de salvare. Ești sigur că vrei să continui?
+        missingMods: Mod-uri lipsă!
+        newMods: Mod-uri abia instalate.
     resourceLoadFailed:
-        title: Resources failed to load
-        demoLinkText: shapez demo on Steam
-        descWeb: "One ore more resources could not be loaded. Make sure you have a
-            stable internet connection and try again. If this still doesn't
-            work, make sure to also disable any browser extensions (including
-            adblockers).<br><br> As an alternative, you can also play the
+        title: Resursele au eșuat încărcarea. 
+        demoLinkText: shapez demo pe Steam.
+        descWeb: " Una sau mai multe resurse nu a putut fi incarcată. Asigură-te că ai o conexiune stabilă si încearcă din nou. Dacă tot nu funcționează, asigură-te că oprești extensiile browseru-lui (chiar și adblocker-ul).
+        <br><br> Ca o alternativă poți juca și 
             <demoOnSteamLinkText>. <br><br> Error Message:"
-        descSteamDemo: "One ore more resources could not be loaded. Try restarting the
-            game - If that does not help, try reinstalling and verifying the
-            game files via Steam. <br><br> Error Message:"
+        descSteamDemo: "Una sau mai multe resurse nu a putut fi încărcată. Încearcă să repornești 
+            jocul - Dacă nu ajută, încearcă să reinstalezi și să verifici fișierele din Steam. <br><br> Error Message:"
     steamSsoError:
         title: Full Version Logout
-        desc: You have been logged out from the Full Browser Version since either your
-            network connection is unstable or you are playing on another
-            device.<br><br> Please make sure you don't have shapez open in any
-            other browser tab or another computer with the same Steam
-            account.<br><br> You can login again in the main menu.
+        desc: Ai fost delogat din versiunea completă a browserului, fie pentru că conexiunea ta la rețea este instabilă, fie pentru că te joci pe un alt dispozitiv.<br><br> 
+Asigură-te că nu ai deschis Shapez în altă filă de browser sau pe alt computer cu același cont Steam.<br><br> Te poți conecta iar în meniul principal.
     steamSsoNoOwnership:
-        title: Full Edition not owned
-        desc: In order to play the Full Edition in your Browser, you need to own both
-            the base game and the Puzzle DLC on your Steam account.<br><br>
-            Please make sure you own both, signed in with the correct Steam
-            account and then try again.
+        title: Ediția completă nu este deținută.
+        desc: Pentru a juca Ediția completă în browser, trebuie să deții atât jocul de bază, cât și DLC-ul Puzzle în contul tău de Steam.<br><br>
+            Asigură-te că deții ambele produse, ești autentificat cu contul corect de Steam și încearcă din nou.
 ingame:
     keybindingsOverlay:
         moveMap: Mișcă-te
@@ -398,7 +388,7 @@ ingame:
     blueprintPlacer:
         cost: Preț
     waypoints:
-        waypoints: Waypointuri
+        waypoints: Waypoint-uri
         hub: Interfață
         description: Click-stânga pe un waypoint pentru a merge la el, click-dreapta
             pentru a îl șterge.<br><br>Apasă <keybinding> pentru a crea un
@@ -461,7 +451,7 @@ ingame:
         copyKey: Copiază Cheie
     connectedMiners:
         one_miner: 1 Miner
-        n_miners: <amount> Miners
+        n_miners: <amount> Mineri
         limited_items: Limitat la <max_throughput>
     watermark:
         title: Versiune Demo
@@ -493,10 +483,10 @@ ingame:
                 desc: Vânează-le pe toate!
             mods:
                 title: Modding support!
-                desc: Over 80 mods available!
-        titleV2: "Get the full version now on Steam to unlock:"
-        titleExpiredV2: Demo completed!
-        titleEnjoyingDemo: Enjoy the demo?
+                desc: Peste 80 de mod-uri!
+        titleV2: "Cumpără acum versiunea completă de pe Steam pentru a debloca:"
+        titleExpiredV2: Demo completat!
+        titleEnjoyingDemo: Îți place versiunea demo?
     puzzleEditorSettings:
         zoneTitle: Zonă
         zoneWidth: Lățime
@@ -571,7 +561,7 @@ buildings:
             name: Tunel
             description: Permite transportarea resurselor pe sub construcții și benzi.
         tier2:
-            name: Tunnel Nivel II
+            name: Tunel Nivel II
             description: Permite transportarea resurselor pe sub construcții și benzi.
     cutter:
         default:
@@ -639,11 +629,11 @@ buildings:
         second:
             name: Cabluri
             description: Transportă semnale, care pot fi culori sau valori binare (1/0)
-                Cablurile colorate diferit nu se conectează
+                Cablurile colorate diferit nu se conectează.
     balancer:
         default:
             name: Balansor
-            description: Multifunctional - Distribuie toate input-urile catre toate
+            description: Multifuncțional - Distribuie toate input-urile către toate
                 output-urile.
         merger:
             name: Merger (compact)
@@ -660,7 +650,7 @@ buildings:
     storage:
         default:
             name: Depozit
-            description: Depozitează iteleme în exces, până la o anumită capacitate.
+            description: Depozitează item-ele în exces, până la o anumită capacitate.
                 Prioritizează output-ul stâng și poate fi folosit ca o poartă de
                 revărsare.
     wire_tunnel:
@@ -749,16 +739,16 @@ buildings:
             description: Stivuiește virtual forma din dreapta peste fomrma din stânga.
         painter:
             name: Vopsitor virtual
-            description: Vopsește virual forma din input-ul de jos cu cea din dreapta.
+            description: Vopsește virtual forma din input-ul de jos cu cea din dreapta.
     item_producer:
         default:
             name: Producător de item
-            description: Disponsibil doar în modul sandbox, semnalul primit de pe stratul
+            description: Disponibil doar în modul sandbox, semnalul primit de pe stratul
                 cabluri pe stratul normal.
     constant_producer:
         default:
             name: Producator de constantă
-            description: Produce constant o anumită formă/culoare
+            description: Produce constant o anumită formă/culoare.
     goal_acceptor:
         default:
             name: Acceptor de obiective
@@ -780,7 +770,7 @@ storyRewards:
     reward_rotater:
         title: Rotitul
         desc: <strong>Rotitorul</strong> a fost deblocat! El rotește formele la 90 de
-            grade.
+            grade în stânga sau dreapta.
     reward_painter:
         title: Pictatul
         desc: "The <strong>Vopsitorul</strong> a fost deblocată - Extrage niște culori
@@ -823,7 +813,7 @@ storyRewards:
             <strong>distanță mai mare</strong>, iar tu poți de asemenea să
             alternezi acele tunele acum!
     reward_cutter_quad:
-        title: Tăiatul quadriplu
+        title: Tăiatul quadruplu
         desc: Ai deblocat o variantă a <strong>tăietorului</strong> - El îți permite să
             tai forme în <strong>patru părți</strong> în loc de două!
     reward_painter_double:
@@ -1032,13 +1022,13 @@ settings:
                 five_minutes: 5 Minute
                 ten_minutes: 10 Minute
                 twenty_minutes: 20 Minute
-                disabled: Dezactivat
+                disabled: Dezactivată
         compactBuildingInfo:
             title: Informații ale construcțiilor compacte
             description: Scurtează casetele cu informații ale construcțiilor afișând doar
                 rația. Altfel se va afișa descrierea și imaginea.
         disableCutDeleteWarnings:
-            title: Dezactivre Avertizări Tăiere/Ștergere
+            title: Dezactivare avertizări Tăiere/Ștergere
             description: Dezactivează dialogul de avertizare atunci când sunt șterse mai
                 mult de 100 de entități.
         enableColorBlindHelper:
@@ -1076,8 +1066,8 @@ settings:
             description: Folosește texturi la calitate slabă pentru a salva performanța. Va
                 face jocul să arate mai urât.
         displayChunkBorders:
-            title: Afișează marginea chuck-urilor
-            description: Jocul e împărțit in chuck-uri de 16x16 pătrate, daca această setare
+            title: Afișează marginea chunk-urilor
+            description: Jocul e împărțit in chunk-uri de 16x16 pătrate, daca această setare
                 e activată atunci marginile chunk-urilor sunt vizibile.
         pickMinerOnPatch:
             title: Selectează extractorul
@@ -1093,7 +1083,7 @@ settings:
             description: Permite harții să se deplaseze mutând cursorul la marginea
                 ecranului. Viteza depinde de setarea Viteză de Deplasare.
         zoomToCursor:
-            title: Zoom către Cursor
+            title: Zoom către cursor
             description: Dacă e activat zoom-ul se va aplica deasupra poziției mouseului,
                 altfel în mijlocul ecranului.
         mapResourcesScale:
@@ -1106,7 +1096,7 @@ settings:
                 ALT.
     rangeSliderPercentage: <amount> %
     tickrateHz: <amount> Hz
-    newBadge: New!
+    newBadge: Nou!
 keybindings:
     title: Tastele setate
     hint: "Indiciu: Asigură-te că foloseșto CTRL, SHIFT și ALT! Ele activează
